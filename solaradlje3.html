@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Odkrij svet gorskega kolesarjenja, vrste MTB koles in nasvete za varno vožnjo.">
+  <title>Gorska kolesa MTB</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e3f2fd;
+      color: #263238;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d47a1, #2196f3);
+      color: black;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    header h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin: 0 0 10px;
+      animation: prihod 1s ease;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    nav {
+      background: #0d47a1;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background: #1976d2;
+      transform: translateY(-2px);
+    }
+
+    .vsebina {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px #0d47a120;
+      animation: prihod 0.8s ease;
+    }
+
+    h2 {
+      color: #1565c0;
+      border-bottom: 3px solid #64b5f6;
+      padding-bottom: 8px;
+    }
+
+    .glavna-slika {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      margin: 25px auto;
+    }
+
+    .kartice {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .kartica {
+      background: #e1f5fe;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #b3e5fc;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .kartica:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px #1565c030;
+    }
+
+    .kartica h3 {
+      color: #0d47a1;
+      margin-top: 0;
+    }
+
+    .oznaka {
+      display: inline-block;
+      background: #1565c0;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .nasvet {
+      background: #e8f5e9;
+      border-left: 5px solid #43a047;
+      padding: 18px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .gumb {
+      display: inline-block;
+      background: #1565c0;
+      color: black;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .gumb:hover {
+      background: #0d47a1;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    @keyframes prihod {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 45px 15px;
+      }
+
+      nav {
+        gap: 5px;
+        padding: 10px 5px;
+      }
+
+      nav a {
+        padding: 9px 10px;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .vsebina {
+        margin: 15px 10px;
+        padding: 20px;
+      }
+
+      .kartice {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1> Gorska kolesa MTB</h1>
+    <p>Odkrij svet gorskega kolesarjenja!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">MTB</a>
+    <a href="ribolov.html">Ribolov</a>
+    <a href="kmetijstvo.html">Kmetijstvo</a>
+    <a href="#vrste">Vrste koles</a>
+    <a href="#nasveti">Nasveti</a>
+  </nav>
+
+  <main class="vsebina">
+    <section>
+      <h2> Gorska kolesa</h2>
+
+      <p>
+        Gorska kolesa oziroma MTB (Mountain Bike) so namenjena
+        vožnji po gozdnih poteh, hribih, makadamu in zahtevnem
+        terenu. Primerna so za rekreacijo, raziskovanje narave
+        in adrenalinske spuste.
+      </p>
+
+      <p>
+        V Sloveniji so priljubljene kolesarske lokacije
+        Mariborsko Pohorje, Kranjska Gora in številne urejene
+        gorske kolesarske poti. Gorska kolesa imajo široke
+        pnevmatike, vzdržljiv okvir in pogosto vzmetenje.
+      </p>
+
+      <img
+        class="glavna-slika"
+        src="MTB.jpg"
+        alt="Gorsko kolo na naravni poti"
+        loading="lazy"
+      >
+    </section>
+
+    <section id="vrste">
+      <h2> Vrste gorskih koles</h2>
+
+      <div class="kartice">
+        <article class="kartica">
+          <span class="oznaka">Za začetnike</span>
+          <h3>MTB START</h3>
+          <p>
+            Odlična izbira za začetnike in rekreativce,
+            ki se vozijo po gozdnih poteh in makadamu.
+          </p>
+          <p><strong>Prednosti:</strong> enostavna uporaba,
+          udobje in vsestranskost.</p>
+        </article>
+
+        <article class="kartica">
+          <span class="oznaka">Za izkušene</span>
+          <h3>MTB PRO</h3>
+          <p>
+            Za kolesarje, ki se radi vozijo po zahtevnejših
+            poteh in hribovitem terenu.
+          </p>
+          <p><strong>Prednosti:</strong> boljši nadzor,
+          zmogljivost in stabilnost.</p>
+        </article>
+
+        <article class="kartica">
+          <span class="oznaka">Za adrenalin</span>
+          <h3>MTB EXTREME</h3>
+          <p>
+            Za zahtevne spuste, kolesarske parke in tehnične
+            gorske proge.
+          </p>
+          <p><strong>Prednosti:</strong> veliko vzmetenja,
+          stabilnost in nadzor pri spustih.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2> Oprema za gorsko kolesarjenje</h2>
+
+      <div class="kartice">
+        <article class="kartica">
+          <h3> Čelada</h3>
+          <p>Ščiti glavo in je pomemben del varne vožnje.</p>
+        </article>
+
+        <article class="kartica">
+          <h3> Rokavice</h3>
+          <p>Izboljšajo oprijem krmila in zaščitijo dlani.</p>
+        </article>
+
+        <article class="kartica">
+          <h3>🔧 Orodje</h3>
+          <p>Osnovno orodje in rezervna zračnica pomagata pri okvarah.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="nasveti">
+      <h2> Nasveti za varno vožnjo</h2>
+
+      <ul>
+        <li>Pred vožnjo preveri zavore, pnevmatike in verigo.</li>
+        <li>Vedno uporabljaj primerno kolesarsko čelado.</li>
+        <li>Hitrost prilagodi svojemu znanju in razmeram na poti.</li>
+        <li>Upoštevaj druge obiskovalce narave in oznake na poteh.</li>
+        <li>S seboj vzemi vodo, telefon in osnovno orodje.</li>
+      </ul>
+
+      <div class="nasvet">
+        <strong> Ali veš?</strong>
+        <p>
+          Širše pnevmatike in ustrezen tlak lahko izboljšajo
+          oprijem na zahtevnem terenu. Pravi tlak je odvisen
+          od pnevmatik, podlage, teže kolesarja in načina vožnje.
+        </p>
+      </div>
+
+      <a class="gumb" href="#vrste">Oglej si vrste koles ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Gorska kolesa MTB | Spletna stran o kolesarjenju</p>
+    <p>Uživaj v naravi in vozi varno! </p>
+  </footer>
+
+</body>
+</html>

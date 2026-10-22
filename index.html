@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTB - Gorska kolesa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .vsebina {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .vsebina h2 {
+            color: #2e7d32;
+        }
+
+        .slika {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .slika img {
+            width: 550px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        /* REKLAMA */
+        .reklama {
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 850px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #212121, #424242);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        .reklama h2 {
+            color: #76ff03;
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .reklama p {
+            font-size: 18px;
+        }
+
+        .gumb {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 30px;
+            background-color: #76ff03;
+            color: #1b1b1b;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+
+        .gumb:hover {
+            background-color: #64dd17;
+        }
+
+        .ponudba {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .kartica {
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .kartica h3 {
+            color: #2e7d32;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #76ff03;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MTB </h1>
+        <p>Doživi naravo. Osvoji teren. Zapelji se dlje.</p>
+    </header>
+
+    <div class="vsebina">
+
+        <h2>Gorska kolesa</h2>
+
+        <p>
+            Gorska kolesa so običajno specializirana za uporabo na gorskih poteh,
+            enojnih stezah, gozdnih cestah in drugih neasfaltiranih površinah.
+            Poleg uporabe za potovanje in rekreacijo na teh površinah jih mnogi
+            ljudje uporabljajo tudi na asfaltiranih površinah.
+        </p>
+
+        <p>
+            Nekateri imajo raje pokončno držo, mehko vožnjo in stabilnost,
+            ki jih gorska kolesa pogosto nudijo. Terenski pogoji za gorsko
+            kolesarjenje pogosto vključujejo kamne, korenine, ohlapno zemljo
+            in strme klance.
+        </p>
+
+        <p>
+            Veliko poti ima dodatne tehnične elemente, kot so leseni prehodi,
+            skalni vrtovi, ozke steze, skoki z vrzelmi in vožnje po stenah.
+            Gorska kolesa so zasnovana za obvladovanje tovrstnega terena.
+        </p>
+
+        <div class="slika">
+            <img src="MTB.jpg" alt="Gorsko kolo">
+        </div>
+
+    </div>
+
+
+    <!-- REKLAMNI DEL -->
+    <div class="reklama">
+
+        <h2> Čas je za novo MTB kolo! </h2>
+
+        <p>
+            Pripravi se na nove dogodivščine!
+            Naša gorska kolesa so namenjena vsem,
+            ki želijo raziskovati gozdove, hribe in zahtevne poti.
+        </p>
+
+        <div class="ponudba">
+
+            <div class="kartica">
+                <h3> MTB START</h3>
+                <p>Odlično za začetnike in rekreativce.</p>
+                <strong>od 499 €</strong>
+            </div>
+
+            <div class="kartica">
+                <h3> MTB PRO</h3>
+                <p>Za zahtevnejše terene in daljše vožnje.</p>
+                <strong>od 899 €</strong>
+            </div>
+
+            <div class="kartica">
+                <h3> MTB EXTREME</h3>
+                <p>Za najbolj zahtevne spuste in terene.</p>
+                <strong>od 1.499 €</strong>
+            </div>
+
+        </div>
+
+        <a class="gumb" href="http://www.osradlje.si">
+            IZVEDI VEČ 
+        </a>
+
+    </div>
+
+
+    <footer>
+        Obišči tudi:
+        <a href="http://www.osradlje.si">osradlje.si</a>
+        <br><br>
+         2026 MTB spletna stran
+    </footer>
+
+</body>
+</html>
